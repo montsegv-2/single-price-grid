@@ -1,7 +1,8 @@
 :root {
-  --clr-primary: hsl(179, 80%, 43%);
+  --clr-primary: rgba(74, 192, 189, 255);
   --clr-secondary: hsl(179, 62%, 43%);
   --clr-highlight: hsl(71, 73%, 54%);
+  --yellow-hover: hsl(71, 88%, 52%);
   --clr-neutral-gray: hsl(204, 43%, 93%);
   --clr-grayish-blue: hsl(218, 22%, 67%);
   --card-radius: 0.5rem;
@@ -71,4 +72,61 @@ body {
   background-color: var(--clr-secondary);
   color: white;
   padding: 2rem;
+}
+
+.information-postit .subscription p {
+  background-color: var(--clr-secondary);
+  margin: 0;
+  vertical-align: middle;
+}
+
+.information-postit .subscription p.price {
+  color: var(--clr-neutral-gray);
+  margin-bottom: 0.5rem;
+}
+
+.information-postit .subscription p.price span {
+  color: white;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-right: 0.325rem;
+  vertical-align: middle;
+}
+
+.information-postit .subscription a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--clr-highlight);
+  padding: 1rem;
+  display: block;
+  border-radius: 0.325rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+  box-shadow: 0.25rem 0.25rem 0.825rem var(--clr-primary);
+}
+
+.information-postit .subscription a:hover {
+  background: var(--yellow-hover);
+}
+
+.information-postit .why-us {
+  background-color: var(--clr-primary);
+  color: white;
+  padding: 2rem;
+}
+
+.information-postit .why-us ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.information-postit .why-us li {
+  font-size: 0.825rem;
+  color: var(--clr-neutral-gray);
+}
+
+.information-postit .why-us ul li + li {
+  margin-top: 0.325rem;
 }
