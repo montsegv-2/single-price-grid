@@ -82,7 +82,9 @@ body {
 
 .information-postit .subscription p.price {
   color: var(--clr-neutral-gray);
+  opacity: 0.5;
   margin-bottom: 0.5rem;
+  opacity: 1;
 }
 
 .information-postit .subscription p.price span {
@@ -91,6 +93,7 @@ body {
   line-height: 2rem;
   margin-right: 0.325rem;
   vertical-align: middle;
+  font-weight: lighter;
 }
 
 .information-postit .subscription a {
@@ -129,4 +132,14 @@ body {
 
 .information-postit .why-us ul li + li {
   margin-top: 0.325rem;
+}
+
+@media screen and (max-width: 34rem) {
+  .information-postit .subscription {
+    grid-column: 1/3;
+  }
+
+  .information-postit .why-us {
+    grid-column: 1/3;
+  }
 }
